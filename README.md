@@ -1,7 +1,8 @@
 # Practicas HTML
 -Practicas de HTML <br>
 --------------------------- <br>
--Vistas HTML/CSS
--Vistas cliente (desktop / mobil)
--Vistas admon. (desktop / mobil);
+## Contenido <br>
+-Vistas HTML/CSS <br>
+-Vistas cliente (desktop / mobil) <br>
+-Vistas admon. (desktop / mobil) <br>
 -Capturas
