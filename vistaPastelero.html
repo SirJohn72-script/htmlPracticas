@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="./stylesPastelero/navbar.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./stylesPastelero/vars.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./stylesPastelero/vistaPastelero.css"
+    />
+
+    <link rel="stylesheet" href="./styles/Reset.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar-wrapper">
+        <div class="logo">
+          <a href="#">
+            <img src="./images/logo.svg" alt="logo" />
+          </a>
+        </div>
+
+        <div class="mobile-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="50"
+            height="50"
+            viewBox="0 0 50 50"
+          >
+            <path
+              d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"
+            ></path>
+          </svg>
+        </div>
+
+        <ul class="menu">
+          <li class="menu-item">
+            <a href="./index.html">Inicio</a>
+          </li>
+          <li class="menu-item">
+            <a href="#ventas">Buzon</a>
+          </li>
+          <li class="menu-item">
+            <a href="#inventario">Inventario</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Ventas -->
+    <secction class="ventas">
+      <div class="ventas-container">
+        <div class="ventas-wrapper">
+          <h1 class="ventas-title">Ventas</h1>
+          <div class="ventas-table-container">
+            <!-- Ventas For Desktop View-->
+            <table class="ventas-table-desktop-view">
+              <!-- Table head -->
+              <thead>
+                <tr>
+                  <th class="wd-10">ID</th>
+                  <th class="wd-20">Solicitante</th>
+                  <th class="wd-10">Status</th>
+                  <th class="wd-10">Precio</th>
+                  <th class="wd-10">Sabores</th>
+                  <th class="wd-10">Adornos</th>
+                  <th class="wd-10">Cubiertas</th>
+                  <th class="wd-20">Acciones</th>
+                </tr>
+              </thead>
+
+              <!--  Table body-->
+              <tbody>
+                <!-- first row -->
+                <tr>
+                  <td>1</td>
+                  <td>John Smith</td>
+                  <td>Enviado</td>
+                  <td>$579.00</td>
+                  <td>
+                    <p>Fresas</p>
+                    <p>Chocolate</p>
+                    <p>Vainilla</p>
+                  </td>
+                  <td>Velas</td>
+                  <td>Crema Batida</td>
+                  <td>
+                    <button class="ver-solicitud">
+                      Ver Solicitud
+                    </button>
+                    <button class="cancelar-solicitud">
+                      Cancelar Pedido
+                    </button>
+                  </td>
+                </tr>
+                <!-- second row -->
+                <tr>
+                  <td>2</td>
+                  <td>Karl Sagan</td>
+                  <td>Aprobado</td>
+                  <td>$300.00</td>
+                  <td>
+                    <p>Chocolate</p>
+                  </td>
+                  <td>Velas</td>
+                  <td>Fondant</td>
+                  <td>
+                    <button class="ver-solicitud">
+                      Ver Solicitud
+                    </button>
+                    <button class="cancelar-solicitud">
+                      Cancelar Pedido
+                    </button>
+                  </td>
+                </tr>
+                <!-- third row -->
+                <tr>
+                  <td>3</td>
+                  <td>Lauren Scott</td>
+                  <td>Trabajando</td>
+                  <td>$270.00</td>
+                  <td>
+                    <p>Fresas</p>
+                    <p>Vainilla</p>
+                  </td>
+                  <td>
+                    <p>Velas</p>
+                    <p>Virutas Chocolate</p>
+                  </td>
+                  <td>Chocolate</td>
+                  <td>
+                    <button class="ver-solicitud">
+                      Ver Solicitud
+                    </button>
+                    <button class="cancelar-solicitud">
+                      Cancelar Pedido
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- Ventas for Mobile View -->
+            <div class="ventas-table-mobile-view">
+              <div class="ventas-mobile-row">
+                <div class="ventas-mobile-row-item">
+                  <div class="ventas-mobile-title">ID</div>
+                  <div class="ventas-mobile-data">01</div>
+                </div>
+                <div class="ventas-mobile-row-item">
+                  <div class="ventas-mobile-title">
+                    Solicitante
+                  </div>
+                  <div class="ventas-mobile-data">
+                    John Smith Lorem
+                  </div>
+                </div>
+                <div class="ventas-mobile-row-item">
+                  <div class="ventas-mobile-title">
+                    Estatus
+                  </div>
+                  <div class="ventas-mobile-data">
+                    Pendiente
+                  </div>
+                </div>
+                <div class="ventas-mobile-row-item">
+                  <div class="ventas-mobile-title">
+                    Acciones
+                  </div>
+                  <div
+                    class="ventas-mobile-row-buttons-action ventas-mobile-data"
+                  >
+                    <button>Ver Solicitud</button>
+                    <button>Cancelar Pedido</button>
+                  </div>
+                </div>
+              </div>
+              <div class="ventas-mobile-row">
+                <div class="ventas-mobile-row-item">
+                  <div class="ventas-mobile-title">ID</div>
+                  <div class="ventas-mobile-data">01</div>
+                </div>
+                <div class="ventas-mobile-row-item">
+                  <div class="ventas-mobile-title">
+                    Solicitante
+                  </div>
+                  <div class="ventas-mobile-data">
+                    John Smith Lorem
+                  </div>
+                </div>
+                <div class="ventas-mobile-row-item">
+                  <div class="ventas-mobile-title">
+                    Estatus
+                  </div>
+                  <div class="ventas-mobile-data">
+                    Pendiente
+                  </div>
+                </div>
+                <div class="ventas-mobile-row-item">
+                  <div class="ventas-mobile-title">
+                    Acciones
+                  </div>
+                  <div
+                    class="ventas-mobile-row-buttons-action ventas-mobile-data"
+                  >
+                    <button>Ver Solicitud</button>
+                    <button>Cancelar Pedido</button>
+                  </div>
+                </div>
+              </div>
+              <div class="ventas-mobile-row">
+                <div class="ventas-mobile-row-item">
+                  <div class="ventas-mobile-title">ID</div>
+                  <div class="ventas-mobile-data">01</div>
+                </div>
+                <div class="ventas-mobile-row-item">
+                  <div class="ventas-mobile-title">
+                    Solicitante
+                  </div>
+                  <div class="ventas-mobile-data">
+                    John Smith Lorem
+                  </div>
+                </div>
+                <div class="ventas-mobile-row-item">
+                  <div class="ventas-mobile-title">
+                    Estatus
+                  </div>
+                  <div class="ventas-mobile-data">
+                    Pendiente
+                  </div>
+                </div>
+                <div class="ventas-mobile-row-item">
+                  <div class="ventas-mobile-title">
+                    Acciones
+                  </div>
+                  <div
+                    class="ventas-mobile-row-buttons-action ventas-mobile-data"
+                  >
+                    <button>Ver Solicitud</button>
+                    <button>Cancelar Pedido</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </secction>
+
+    <!-- Inventario -->
+    <secction class="inventario">
+      <div class="inventario-container">
+        <div class="inventario-wrapper">
+          <h1 class="title-inventario">Inventario</h1>
+          <!-- Contenedor para las tablas del inventario -->
+          <div class="inventario-tables-container">
+            <!--Inventario de la tabla de sabores -->
+            <table
+              class="table-inventario sabores-table-inventario"
+            >
+              <caption>
+                Sabores de biscocho
+              </caption>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Item</th>
+                  <th>Cantidad</th>
+                  <th>Precio</th>
+                  <th>Acciones</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Vainilla</td>
+                  <td>25</td>
+                  <td>$120.0.0</td>
+                  <td>
+                    <button>Editar</button>
+                    <button>Eliminar</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Chocolate</td>
+                  <td>45</td>
+                  <td>$120.0.0</td>
+                  <td>
+                    <button>Editar</button>
+                    <button>Eliminar</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Fresa</td>
+                  <td>25</td>
+                  <td>$120.0.0</td>
+                  <td>
+                    <button>Editar</button>
+                    <button>Eliminar</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Zanahoria</td>
+                  <td>25</td>
+                  <td>$120.0.0</td>
+                  <td>
+                    <button>Editar</button>
+                    <button>Eliminar</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Red Velvet</td>
+                  <td>25</td>
+                  <td>$120.0.0</td>
+                  <td>
+                    <button>Editar</button>
+                    <button>Eliminar</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>Queso</td>
+                  <td>25</td>
+                  <td>$120.0.0</td>
+                  <td>
+                    <button>Editar</button>
+                    <button>Eliminar</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- Inventario de la tabla de adornos -->
+            <table
+              class="table-inventario adornos-table-inventario"
+            >
+              <caption>
+                Adornos para pastel
+              </caption>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Item</th>
+                  <th>Cantidad</th>
+                  <th>Precio</th>
+                  <th>Acciones</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Fresas</td>
+                  <td>25</td>
+                  <td>$120.0.0</td>
+                  <td>
+                    <button>Editar</button>
+                    <button>Eliminar</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Chocholate Rayado</td>
+                  <td>45</td>
+                  <td>$120.0.0</td>
+                  <td>
+                    <button>Editar</button>
+                    <button>Eliminar</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Virutas de Chocolate</td>
+                  <td>25</td>
+                  <td>$120.0.0</td>
+                  <td>
+                    <button>Editar</button>
+                    <button>Eliminar</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Nueces</td>
+                  <td>25</td>
+                  <td>$120.0.0</td>
+                  <td>
+                    <button>Editar</button>
+                    <button>Eliminar</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Chocolate</td>
+                  <td>25</td>
+                  <td>$120.0.0</td>
+                  <td>
+                    <button>Editar</button>
+                    <button>Eliminar</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- Inventario de la tabla de Cubiertas -->
+            <table
+              class="table-inventario adornos-table-inventario"
+            >
+              <caption>
+                Cubiertas para pastel
+              </caption>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Item</th>
+                  <th>Cantidad</th>
+                  <th>Precio</th>
+                  <th>Acciones</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Chocolate</td>
+                  <td>25</td>
+                  <td>$120.0.0</td>
+                  <td>
+                    <button>Editar</button>
+                    <button>Eliminar</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Crema Batida</td>
+                  <td>45</td>
+                  <td>$120.0.0</td>
+                  <td>
+                    <button>Editar</button>
+                    <button>Eliminar</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Helado</td>
+                  <td>25</td>
+                  <td>$120.0.0</td>
+                  <td>
+                    <button>Editar</button>
+                    <button>Eliminar</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Mermelada</td>
+                  <td>25</td>
+                  <td>$120.0.0</td>
+                  <td>
+                    <button>Editar</button>
+                    <button>Eliminar</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </secction>
+  </body>
+</html>

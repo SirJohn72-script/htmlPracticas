@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="stylesheet" href="./styles/vars.css" />
+    <link rel="stylesheet" href="./styles/Reset.css" />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/home.css" />
+    <link
+      rel="stylesheet"
+      href="./styles/personalizacion.css"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <title>Pasteleria</title>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sansita+Swashed:wght@900&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Menu -->
+    <nav class="navbar">
+      <div class="navbar-wrapper">
+        <div class="logo">
+          <a href="#">
+            <img src="./images/logo.svg" alt="logo" />
+          </a>
+        </div>
+
+        <div class="mobile-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="50"
+            height="50"
+            viewBox="0 0 50 50"
+          >
+            <path
+              d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"
+            ></path>
+          </svg>
+        </div>
+
+        <ul class="menu">
+          <li class="menu-item">
+            <a href="#home">Home</a>
+          </li>
+          <li class="menu-item">
+            <a href="#comprar">Compra</a>
+          </li>
+          <li class="menu-item">
+            <a href="#populares">Populares</a>
+          </li>
+          <li class="menu-item">
+            <a href="#testimonios">Clientes</a>
+          </li>
+          <li class="menu-item">
+            <a href="#contacto">Contacto</a>
+          </li>
+          <li class="menu-item">
+            <a href="./vistaPastelero.html"
+              >Vista Pastelero</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Home Hero -->
+    <seccion class="home-seccion" id="home">
+      <div class="home-container">
+        <div class="home-wrapper">
+          <div class="center-home-message">
+            <div class="home-header">
+              <h1>
+                <p>Lorem Ipsum</p>
+                <p>Eius ratione enim molestiae in!</p>
+              </h1>
+            </div>
+            <p class="home-subheader">
+              Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Nulla laboriosam quibusdam
+            </p>
+          </div>
+        </div>
+      </div>
+    </seccion>
+
+    <!-- Steps by buys -->
+    <secction class="steps-buy">
+      <div class="steps-buy-container">
+        <div class="steps-buy-wrapper">
+          <div class="steps-buy-title">
+            <h1>Como comprar un pastel</h1>
+          </div>
+          <div class="card-buy-step">
+            <h3>01</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur
+              adipisicing elit. Ducimus autem dolores
+              voluptate.
+            </p>
+          </div>
+          <div class="card-buy-step">
+            <h3>02</h3>
+            <p>
+              amet consectetur adipisicing elit. Ducimus
+              autem dolores voluptate. dipisicing elit.
+              Corporis accusantium voluptates esse.
+            </p>
+          </div>
+          <div class="card-buy-step">
+            <h3>03</h3>
+            <p>
+              sit amet consectetur adipisicing elit. Ducimus
+              autem dolores voluptate.
+            </p>
+          </div>
+          <div class="button-steps-buy">
+            <button>Comprar</button>
+          </div>
+        </div>
+      </div>
+    </secction>
+
+    <!-- Personalizacion -->
+    <section
+      class="container-personalizacion-pastel"
+      id="comprar"
+    >
+      <div class="wrapper-personalizacion-pastel">
+        <!-- Header -->
+        <div class="header">
+          <h2>Personaliza tu</h2>
+          <h1>Pastel</h1>
+          <p>Elige tu sabor, adornos, y combinalos</p>
+        </div>
+
+        <!-- Lista de ingredientes -->
+        <form class="pasteles-personalizacion-form">
+          <!-- Opciones del biscocho -->
+          <div class="sabores-title pastel-opcion-column">
+            <h3 class="pastel-opcion-column">Sabores</h3>
+            <div
+              class="biscochos-items pastel-opcion-items-container"
+            >
+              <div class="biscocho-item item-row">
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="item"
+                />
+                <p class="item">Vainilla</p>
+                <p class="item">$120.00</p>
+              </div>
+              <div class="biscocho-item item-row">
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="item"
+                />
+                <p class="item">Chocolate</p>
+                <p class="item">$120.00</p>
+              </div>
+              <div class="biscocho-item item-row">
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="item"
+                />
+                <p class="item">Fresa</p>
+                <p class="item">$120.00</p>
+              </div>
+              <div class="biscocho-item item-row">
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="item"
+                />
+                <p class="item">Zanahoria</p>
+                <p class="item">$120.00</p>
+              </div>
+              <div class="biscocho-item item-row">
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="item"
+                />
+                <p class="item">Red Velvet</p>
+                <p class="item">$120.00</p>
+              </div>
+              <div class="biscocho-item item-row">
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="item"
+                />
+                <p class="item">Queso</p>
+                <p class="item">$120.00</p>
+              </div>
+            </div>
+          </div>
+          <!-- Opciones de los adornos -->
+          <div class="adornos-title pastel-opcion-column">
+            <h3 class="pastel-opcion-column">Adornos</h3>
+            <div
+              class="biscochos-items pastel-opcion-items-container"
+            >
+              <div class="biscocho-item item-row">
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="item"
+                />
+                <p class="item">Fresas</p>
+                <p class="item">$120.00</p>
+              </div>
+              <div class="biscocho-item item-row">
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="item"
+                />
+                <p class="item">Chocolate Rayado</p>
+                <p class="item">$120.00</p>
+              </div>
+              <div class="biscocho-item item-row">
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="item"
+                />
+                <p class="item">Virutas Chocolate</p>
+                <p class="item">$120.00</p>
+              </div>
+              <div class="biscocho-item item-row">
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="item"
+                />
+                <p class="item">Nueces</p>
+                <p class="item">$120.00</p>
+              </div>
+              <div class="biscocho-item item-row">
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="item"
+                />
+                <p class="item">Chocolate</p>
+                <p class="item">$120.00</p>
+              </div>
+              <div class="biscocho-item item-row">
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="item"
+                />
+                <p class="item">Fresas</p>
+                <p class="item">$120.00</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Opciones de las cubiertas -->
+          <div class="cubiertas-title pastel-opcion-column">
+            <h3 class="pastel-opcion-column">Cubiertas</h3>
+            <div
+              class="biscochos-items pastel-opcion-items-container"
+            >
+              <div class="biscocho-item item-row">
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="item"
+                />
+                <p class="item">Chocolate</p>
+                <p class="item">$120.00</p>
+              </div>
+              <div class="biscocho-item item-row">
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="item"
+                />
+                <p class="item">Crema Batida</p>
+                <p class="item">$120.00</p>
+              </div>
+              <div class="biscocho-item item-row">
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="item"
+                />
+                <p class="item">Helado</p>
+                <p class="item">$120.00</p>
+              </div>
+              <div class="biscocho-item item-row">
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="item"
+                />
+                <p class="item">Mermelada</p>
+                <p class="item">$120.00</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="precios">
+            <p>TOTAL</p>
+            <p>$00.00</p>
+          </div>
+
+          <!-- Solicitar datos del cliente -->
+          <div class="info-contacto-cliente">
+            <h3>Informacion de contacto</h3>
+            <div class="infor-contacto-cliente-inputs">
+              <input
+                type="text"
+                name=""
+                id=""
+                placeholder="Tu nombre"
+                class="nombre"
+              />
+              <div class="number-email-container">
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="Telefono"
+                  class="numero"
+                />
+                <input
+                  type="email"
+                  name=""
+                  id=""
+                  placeholder="Correo electronico"
+                  class="email"
+                />
+              </div>
+              <textarea
+                type="text"
+                name=""
+                rows="7"
+                id=""
+                placeholder="Descripccion General"
+                class="description-pastel"
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="boton-enviar-pedido">
+            <button class="btn" type="submit">
+              Enviar Pedido
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Favorite cakes -->
+    <secction class="favorite-cakes" id="populares">
+      <div class="favorite-cakes-container">
+        <div class="favorite-cakes-wrapper">
+          <div class="favorite-cakes-title">
+            <h1>Pasteles Mas Populares</h1>
+          </div>
+          <div class="favorite-cakes-items cake-item">
+            <div class="favorite-cakes-item">
+              <img
+                src="./images/cake1.jpg"
+                alt="cake-item"
+              />
+              <div class="item-data">
+                <div>
+                  <h3>Panquesito</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Dolore exercitationem
+                    quae iusto aspernatur eius deleniti
+                    velit voluptatibus praesentium itaque
+                    ipsum.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="favorite-cakes-item">
+              <img
+                src="./images/cake2.jpg"
+                alt="cake-item"
+              />
+              <div class="item-data">
+                <div>
+                  <h3>Cherry Explosion</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Dolore exercitationem
+                    quae iusto aspernatur eius deleniti
+                    velit voluptatibus praesentium itaque
+                    ipsum.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="favorite-cakes-item">
+              <img
+                src="./images/cake4.jpg"
+                alt="cake-item"
+              />
+              <div class="item-data">
+                <div>
+                  <h3>Kitty</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Dolore exercitationem
+                    quae iusto aspernatur eius deleniti
+                    velit voluptatibus praesentium itaque
+                    ipsum.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="favorite-cakes-item">
+              <img
+                src="./images/cake5.jpg"
+                alt="cake-item"
+              />
+              <div class="item-data">
+                <div>
+                  <h3>Pink Unicorn</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Dolore exercitationem
+                    quae iusto aspernatur eius deleniti
+                    velit voluptatibus praesentium itaque
+                    ipsum.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="favorite-cakes-item">
+              <img
+                src="./images/cake6.jpg"
+                alt="cake-item"
+              />
+              <div class="item-data">
+                <div>
+                  <h3>Pink and Cherry Life</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Dolore exercitationem
+                    quae iusto aspernatur eius deleniti
+                    velit voluptatibus praesentium itaque
+                    ipsum.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </secction>
+
+    <!-- Testimonies -->
+    <secction class="testimonies" id="testimonios">
+      <div class="testimonies-container">
+        <div class="testimonies-wrapper">
+          <h1 class="testimonies-title">
+            Nuestros clientes hablan por nosotros
+          </h1>
+          <h2 class="testimonies-subtitle">
+            (Cientificamente Comprobado)
+          </h2>
+          <div class="testimonies-items">
+            <div class="testimonies-item">
+              <img
+                src="https://cdn.mos.cms.futurecdn.net/TFg2etQK9yjNqUrRwYHcDG.jpg"
+                alt="profile-img"
+              />
+              <h3>GlaDOS</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Quod quisquam placeat quam
+                impedit reprehenderit et blanditiis
+                cupiditate. Dignissimos, saepe culpa Lorem
+                ipsum dolor, sit amet consectetur
+                adipisicing elit. Aperiam labore quis nobis
+                fugit illo molestiae voluptates
+                reprehenderit dignissimos, quo nihil?
+              </p>
+            </div>
+            <div class="testimonies-item">
+              <img
+                src="https://i.gifer.com/fetch/w300-preview/45/45839c89d580e5b8ce4607d20f31e669.gif"
+                alt="profile-img"
+              />
+              <h3>Chell</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Quod quisquam placeat quam
+                impedit reprehenderit et blanditiis
+                cupiditate. Dignissimos, saepe culpa(The
+                cake is a lie)
+              </p>
+            </div>
+            <div class="testimonies-item">
+              <img
+                src="https://static.turbosquid.com/Preview/2014/07/10__01_18_29/WheatleyHDRender.pngf0ca2b06-1b65-4f47-b94b-24f6b5eab934Large.jpg"
+                alt="profile-img"
+              />
+              <h3>Wheatley</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Quod quissquam placeat
+                quam impedit reprehenderit et blanditiis
+                cupiditate. Dignissimos, saepe culpa Lorem
+                ipsum, dolor sit amet consectetur
+                adipisicing elit. Voluptatum, placeat.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </secction>
+
+    <!-- Seccion de contacto -->
+    <seccion class="contact" id="contacto">
+      <div class="contanct-container">
+        <div class="contact-wrapper">
+          <div class="contact-center-info">
+            <h1 class="contact-title">
+              ¿Hablas idioma pastelero?
+            </h1>
+            <p class="contact-description">
+              Si no, no te preocupes, también hablamos
+              español
+            </p>
+            <form class="form-contact" action="">
+              <input
+                type="text"
+                class="correo-contact"
+                placeholder="correo@correo.com"
+              />
+              <textarea
+                rows="4"
+                cols="50"
+                class="mensaje-contact"
+                placeholder="Describe yourself here..."
+              ></textarea>
+              <button
+                class="enviar-msg-contact"
+                type="submit"
+              >
+                Enviar Mensaje
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </seccion>
+
+    <!-- footer -->
+    <seccion class="footer-container">
+      <div class="footer-wrapper">
+        <p>THE CAKE IS A LIE</p>
+        <p>Península superior de Michigan no.2</p>
+        <p>theCakeIsALie@aperturescience.com</p>
+        <p>(513) 273-7724</p>
+        <p>Abierto todos los dias de 7am a 7pm</p>
+        <p>Todos los derechos reservados 2022</p>
+      </div>
+    </seccion>
+  </body>
+</html>

@@ -1,0 +1,383 @@
+.ventas-container {
+  width: 100%;
+}
+
+.ventas-wrapper {
+  width: 90%;
+  margin: auto;
+  margin-top: 70px;
+  padding: 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ventas-wrapper .ventas-title {
+  width: 100%;
+  font-size: 3rem;
+  color: var(--font-header-color);
+  font-family: var(--font-header);
+  text-align: center;
+}
+
+/* Table For Desktop View*/
+.ventas-table-container {
+  width: 100%;
+  max-width: 1500px;
+  margin-top: 2rem;
+}
+
+.ventas-table-container .ventas-table-desktop-view {
+  width: 100%;
+
+  border: 1px solid #ccc;
+  border-spacing: 0px;
+  border-collapse: collapse;
+}
+
+@media (max-width: 992px) {
+  .ventas-table-container .ventas-table-desktop-view {
+    display: none;
+  }
+}
+
+/* Table head */
+.ventas-table-container .ventas-table-desktop-view thead {
+  background-color: #393939;
+}
+
+.ventas-table-container
+  .ventas-table-desktop-view
+  thead
+  tr
+  th {
+  padding: 1rem 0;
+  color: var(--font-color-white);
+  font-family: var(--font-body);
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+/* Table body */
+.ventas-table-container
+  .ventas-table-desktop-view
+  tbody
+  tr {
+  border: 1px solid #ccc;
+}
+
+.ventas-table-container
+  .ventas-table-desktop-view
+  tbody
+  tr
+  td {
+  color: var(--font-body-color);
+  font-family: var(--font-body);
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+/* Botones de acciones */
+.ventas-table-container
+  .ventas-table-desktop-view
+  tbody
+  tr
+  td
+  .cancelar-solicitud,
+.ventas-table-container
+  .ventas-table-desktop-view
+  tbody
+  tr
+  td
+  .ver-solicitud {
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  color: var(--font-color-white);
+  font-family: var(--font-body);
+  padding: 0.5rem;
+  margin-bottom: 0.2rem;
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+
+.ventas-table-container
+  .ventas-table-desktop-view
+  tbody
+  tr
+  td
+  .ver-solicitud {
+  background-color: rgb(15, 161, 93);
+}
+.ventas-table-container
+  .ventas-table-desktop-view
+  tbody
+  tr
+  td
+  .cancelar-solicitud {
+  background-color: rgb(204, 71, 38);
+}
+
+.ventas-table-container
+  .ventas-table-desktop-view
+  tbody
+  tr
+  td
+  .ver-solicitud:hover {
+  background-color: rgb(41, 207, 130);
+  transition: 0.3s all ease;
+}
+.ventas-table-container
+  .ventas-table-desktop-view
+  tbody
+  tr
+  td
+  .cancelar-solicitud:hover {
+  background-color: rgb(241, 125, 96);
+  transition: 0.3s all ease;
+}
+
+/* Width of the columns */
+.ventas-table-container .ventas-table-desktop-view .wd-10 {
+  width: 10%;
+}
+.ventas-table-container .ventas-table-desktop-view .wd-30 {
+  width: 30%;
+}
+
+.ventas-table-container .ventas-table-desktop-view .wd-20 {
+  width: 20%;
+}
+
+/* ------------------------------------------------------------------------------------ */
+/* Table for ventas for mobile view */
+.ventas-table-container .ventas-table-mobile-view {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.ventas-table-mobile-view .ventas-mobile-row {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  outline: 1px solid #393939;
+}
+
+.ventas-mobile-row-item {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.ventas-mobile-title {
+  width: 20%;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1rem;
+  color: var(--font-color-white);
+  font-family: var(--font-body);
+}
+
+.ventas-mobile-title::before {
+  content: "";
+  width: 20%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #393939;
+}
+
+.ventas-mobile-data {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 1rem;
+  padding: 0.5rem;
+
+  font-size: 1rem;
+  color: #393939;
+  font-family: var(--font-body);
+  /* outline: 1px solid #aaa; */
+}
+
+.ventas-mobile-data button {
+  outline: none;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: var(--font-color-white);
+  border-radius: 10px;
+  transition: 0.3s all ease;
+}
+
+.ventas-mobile-data button:nth-child(1) {
+  background-color: rgb(15, 161, 93);
+}
+.ventas-mobile-data button:nth-child(2) {
+  margin-left: 0.5rem;
+  background-color: rgb(204, 71, 38);
+}
+
+.ventas-mobile-data button:nth-child(1):hover {
+  background-color: rgb(41, 207, 130);
+  transition: 0.3s all ease;
+}
+
+.ventas-mobile-data button:nth-child(2):hover {
+  background-color: rgb(241, 125, 96);
+  transition: 0.3s all ease;
+}
+
+@media (min-width: 992px) {
+  .ventas-table-mobile-view {
+    display: none;
+  }
+}
+
+@media (max-width: 481px) {
+  .ventas-mobile-title {
+    width: 40%;
+  }
+
+  .ventas-mobile-title::before {
+    width: 40%;
+  }
+
+  .ventas-mobile-data {
+    width: 60%;
+  }
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Inventario */
+.inventario-container {
+  width: 100%;
+}
+
+.inventario-wrapper {
+  width: 90%;
+  margin: auto;
+  max-width: 1500px;
+}
+
+.inventario-wrapper .title-inventario {
+  width: 100%;
+  font-size: 3rem;
+  color: var(--font-header-color);
+  font-family: var(--font-header);
+  text-align: center;
+}
+
+/* Contenedor de las tablas */
+.inventario-tables-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+/* Estilos para las tablas individuales */
+.table-inventario {
+  width: 100%;
+  border-spacing: 0px;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+.table-inventario caption {
+  text-align: center;
+  color: #393939;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  font-weight: 700;
+}
+
+.table-inventario thead tr th {
+  background-color: #393939;
+  color: var(--font-color-white);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  font-weight: 400;
+}
+
+.table-inventario thead tr th:nth-child(1) {
+  width: 10%;
+}
+.table-inventario thead tr th:nth-child(2) {
+  width: 40%;
+}
+.table-inventario thead tr th:nth-child(3) {
+  width: 10%;
+}
+.table-inventario thead tr th:nth-child(4) {
+  width: 10%;
+}
+.table-inventario thead tr th:nth-child(5) {
+  width: 30%;
+}
+
+.table-inventario tbody tr {
+  outline: 1px solid #aaa;
+}
+
+.table-inventario tbody tr td {
+  text-align: center;
+  color: var(--font-body-color);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  font-weight: 400;
+}
+
+.table-inventario tbody tr td button {
+  outline: none;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: var(--font-color-white);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+.table-inventario tbody tr td button:nth-child(1) {
+  background-color: rgb(15, 161, 93);
+}
+.table-inventario tbody tr td button:nth-child(2) {
+  margin-left: 0.5rem;
+  background-color: rgb(204, 71, 38);
+}
+
+.table-inventario tbody tr td button:nth-child(1):hover {
+  background-color: rgb(41, 207, 130);
+  transition: 0.3s all ease;
+}
+
+.table-inventario tbody tr td button:nth-child(2):hover {
+  background-color: rgb(241, 125, 96);
+  transition: 0.3s all ease;
+}
+
+@media (max-width: 992px) {
+  .table-inventario {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .table-inventario thead tr th {
+    font-size: 0.8rem;
+  }
+
+  .table-inventario tbody tr td button {
+    margin-bottom: 0.5rem;
+  }
+}

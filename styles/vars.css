@@ -1,0 +1,18 @@
+:root {
+  --font-header: #ec495e;
+  --font-subheader: #61434b;
+  --font-body-color: #a8756f;
+  --font-body-color-dark: #434f53;
+  --font-white: #fff;
+  --navbar-hover: #758184;
+  --navbar-color: #a8756f;
+  --navbar-hover: #ec495e;
+  --button-color: #ec495e;
+  --button-hover: #ff586e;
+  --navbar-color-hover: #fff;
+  --footer-bgc: #6c567b;
+  --bgc: #f5d5d6;
+  --font-headers: "Berkshire Swash";
+  --font-body: "Lora";
+  --font-navbar: "Montserrat";
+}

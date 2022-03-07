@@ -1,0 +1,9 @@
+:root {
+  --font-body: sans-serif;
+  --font-header: arial;
+  --font-body-color: #696969;
+  --font-header-color: #393939;
+  --font-color-white: #fff;
+  --navbar-bgc: #393939;
+  --button-hover: rgb(54, 139, 209);
+}
